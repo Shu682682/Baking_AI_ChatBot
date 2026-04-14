@@ -15,10 +15,23 @@ def chat(req: ChatRequest):
     result = generate_response(req.message)
     recipe = result["recipe"]
 
+    if recipe is None:
+        return ChatResponse(
+            recipe_name="",
+            servings=0,
+            ingredients=[],
+            steps=[],
+            answer=result["answer"],
+            total_calories=result.get("total_calories", 0.0),
+            calories_per_serving=result.get("calories_per_serving", 0.0)
+        )
+
     return ChatResponse(
         recipe_name=recipe.name,
         servings=recipe.servings,
         ingredients=recipe.ingredients,
-        steps=recipe.steps,
-        answer=result["answer"]
+        steps=result.get("translated_steps") or recipe.steps,
+        answer=result["answer"],
+        total_calories=result.get("total_calories", 0.0),
+        calories_per_serving=result.get("calories_per_serving", 0.0)
     )

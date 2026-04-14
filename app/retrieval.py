@@ -29,7 +29,7 @@ RECIPE_KEYWORDS = {
         "fruit pie", "mixed fruit pie", "berry pie", "水果派"
     ],
     "New York Cheesecake": [
-        "new york cheesecake", "ny cheesecake", "cheesecake", "起司蛋糕", "乳酪蛋糕", "紐約起司蛋糕"
+        "new york cheesecake", "ny cheesecake", "cheesecake", "起司蛋糕", "乳酪蛋糕", "紐約起司蛋糕", "cheese cake"
     ],
     "Chocolate Tart": [
         "chocolate tart", "tart", "巧克力塔", "chocolate pie"
@@ -47,7 +47,7 @@ RECIPE_KEYWORDS = {
         "blueberry muffin", "blueberry muffins", "muffin", "muffins", "藍莓瑪芬", "玛芬"
     ],
     "Pumpkin Pie": [
-        "pumpkin pie", "南瓜派"
+        "pumpkin pie", "南瓜派", "pumpkin"
     ],
     "Apple Pie": [
         "apple pie", "蘋果派"
@@ -89,7 +89,7 @@ RECIPE_KEYWORDS = {
         "key lime pie", "lime pie", "青檸派", "酸橙派"
     ],
     "Whoopie Pies": [
-        "whoopie pie", "whoopie pies"
+        "whoopie pie", "whoopie pies", "屋比派"
     ],
     "Boston Cream Pie": [
         "boston cream pie", "波士頓奶油派", "波士顿奶油派", "Boston pie"
@@ -98,7 +98,7 @@ RECIPE_KEYWORDS = {
         "coffee cake", "咖啡蛋糕"
     ],
     "Pound Cake": [
-        "pound cake", "磅蛋糕"
+        "pound cake", "磅蛋糕", "原味蛋糕"
     ],
     "Cinnamon Rolls": [
         "cinnamon roll", "cinnamon rolls", "肉桂捲", "肉桂卷","cinnamon buns"
@@ -116,6 +116,7 @@ RECIPE_KEYWORDS = {
         "peanut butter cookie", "peanut butter cookies", "花生醬餅乾", "花生酱饼干"
     ]
 }
+
 def load_recipes() -> list[Recipe]:
     if not DATA_PATH.exists():
         raise FileNotFoundError(f"recipes.json not found at: {DATA_PATH}")
@@ -126,11 +127,11 @@ def load_recipes() -> list[Recipe]:
     return [Recipe(**item) for item in data]
 
 
-def find_recipe_by_id(recipe_id: str, recipes: list[Recipe]) -> Recipe:
+def find_recipe_by_id(recipe_id: str, recipes: list[Recipe]) -> Recipe | None:
     for recipe in recipes:
         if recipe.recipe_id == recipe_id:
             return recipe
-    return recipes[0]
+    return None
 
 
 def normalize_text(text: str) -> str:
@@ -151,7 +152,7 @@ def build_recipe_alias_map(recipes: list[Recipe]) -> dict[str, list[str]]:
 
 def find_recipe_by_keyword(recipes: list[Recipe], user_message: str) -> Recipe | None:
     if not recipes:
-        raise ValueError("recipes list is empty")
+        return None
 
     normalized_message = normalize_text(user_message)
     alias_map = build_recipe_alias_map(recipes)
@@ -179,38 +180,43 @@ def find_recipe_by_keyword(recipes: list[Recipe], user_message: str) -> Recipe |
             best_score = score
             best_recipe = recipe
 
+    # 至少要有明確分數才算找到
+    if best_score <= 0:
+        return None
+
     return best_recipe
 
 
-
-def find_recipe(user_message: str, use_chroma: bool = False) -> Recipe:
+def find_recipe(user_message: str, use_chroma: bool = False) -> Recipe | None:
     recipes = load_recipes()
     normalized_message = normalize_text(user_message)
     alias_map = build_recipe_alias_map(recipes)
 
-    # First, try to match exact aliases
+    # 1. exact alias match
     for recipe in recipes:
         for alias in alias_map.get(recipe.name, []):
             if alias in normalized_message:
                 return recipe
 
-    # Second, keyword scoring
+    # 2. keyword scoring
     keyword_recipe = find_recipe_by_keyword(recipes, user_message)
-
     if keyword_recipe is not None:
         return keyword_recipe
 
-    # Finally, use chroma
+    # 3. vector search
     if use_chroma:
         try:
-            return find_recipe_by_chroma(user_message)
+            chroma_recipe = find_recipe_by_chroma(user_message)
+            if chroma_recipe is not None:
+                return chroma_recipe
         except Exception:
             pass
 
-    #  fallback
-    return recipes[0]
+    # 4. not found
+    return None
 
-def find_recipe_by_chroma(user_message: str) -> Recipe:
+
+def find_recipe_by_chroma(user_message: str) -> Recipe | None:
     recipes = load_recipes()
 
     client = chromadb.PersistentClient(path=CHROMA_PATH)
@@ -226,26 +232,7 @@ def find_recipe_by_chroma(user_message: str) -> Recipe:
 
     ids = results.get("ids", [])
     if not ids or not ids[0]:
-        return recipes[0]
+        return None
 
     recipe_id = ids[0][0]
     return find_recipe_by_id(recipe_id, recipes)
-
-# def find_recipe_by_chroma(user_message: str) -> Recipe:
-#     recipes = load_recipes()
-#     client = chromadb.PersistentClient(path=CHROMA_PATH)
-#     collection = client.get_or_create_collection(name=COLLECTION_NAME)
-
-#     query_vector = embed_query(user_message)
-
-#     results = collection.query(
-#         query_embeddings=[query_vector],
-#         n_results=1
-#     )
-
-#     ids = results.get("ids", [])
-#     if not ids or not ids[0]:
-#         return recipes[0]
-
-#     recipe_id = ids[0][0]
-#     return find_recipe_by_id(recipe_id, recipes)

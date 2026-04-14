@@ -13,9 +13,9 @@ This project improves reliability by:
 
 This makes the system more practical for real cooking and baking scenarios.
 
-![Demo Screenshot](assets/demopic.png)
-This project uses a hybrid architecture that combines:
+---
 
+This project uses a hybrid architecture that combines:
 - **structured recipe data** as the source of truth
 - **deterministic Python logic** for ingredient scaling
 - **keyword matching + Chroma vector retrieval** for recipe search
@@ -42,12 +42,12 @@ This design improves reliability by separating calculation logic from language g
 
 ## Example Use Cases
 
-Users can ask questions such as:
+Users can ask in both English and Mandarin, for example:
 
 - `I want pumpkin pie for 6 people`
 - `Give me a brownie recipe for 12 servings`
 - `I want to make tiramisu for 8 people`
-- `我要做南瓜派5個人`
+- `我要做南瓜派5個人`(Madarin is okay too)
 - `我要做20人份的巧克力蛋糕`
 
 The system will:

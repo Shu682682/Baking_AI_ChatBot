@@ -2,41 +2,46 @@
 
 [![Watch Demo 1](assets/demo3.gif)](./assets/demo3.gif)
 
-Baking AI Chatbot is an AI-powered dessert recipe assistant designed to help users search for recipes, adjust ingredients for different serving sizes, and receive clear baking instructions.
-Many recipe chatbots rely too heavily on LLM generation, which can lead to incorrect ingredient amounts or invented steps.
-This project improves reliability by:
+Baking AI Chatbot is an AI-powered dessert recipe assistant that helps users search for recipes, adjust ingredients for different serving sizes, estimate calories, and receive clear baking guidance in either English or Traditional Chinese.
 
+Unlike many recipe chatbots that rely too heavily on LLM generation, this project is designed to improve reliability and consistency for real baking scenarios. Instead of letting the model invent ingredient amounts or recipe steps, the system uses structured recipe data as the source of truth and deterministic Python logic for scaling and nutrition calculation.
+
+The chatbot improves practicality by:
 - **keeping recipes in structured data**
 - **performing ingredient scaling with deterministic code**
-- **using retrieval before generation**
-- **using the LLM only for explanation and natural language presentation**
+- **calculating total calories and calories per serving programmatically**
+- **supporting bilingual interaction with language-aware responses**
+- **using keyword matching and Chroma vector retrieval before generation**
+- **using the LLM mainly for explanation, formatting, and natural language presentation**
 
-This makes the system more practical for real cooking and baking scenarios.
+This design makes the system more reliable and better suited for real cooking and baking use cases.
 
 ---
-
+## Architecture
 This project uses a hybrid architecture that combines:
 - **structured recipe data** as the source of truth
 - **deterministic Python logic** for ingredient scaling
+- **deterministic calorie calculation** based on ingredient data
 - **keyword matching + Chroma vector retrieval** for recipe search
 - **Ollama + LangChain** for grounded response generation
 - **FastAPI** for backend APIs
 - **Streamlit** for the interactive frontend
 
-This design improves reliability by separating calculation logic from language generation, making the chatbot more practical for real baking use cases.
+By separating calculation and retrieval logic from language generation, the chatbot can provide more accurate recipe quantities, more consistent nutrition estimates, and more reliable multilingual responses.
 
 ---
 
 ## Features
-
 - Natural language dessert recipe requests
+- Bilingual support for English and Traditional Chinese
+- Total calorie and per-serving calorie estimation
 - Recipe retrieval with keyword matching and vector search
 - Ingredient scaling based on serving size
 - Grounded response generation with Ollama + LangChain
-- FastAPI backend with API endpoints
+- Local-first architecture with Ollama and Chroma
 - Streamlit frontend for interactive demo
 - Unit and integration tests with pytest
-- Local-first architecture with Ollama and Chroma
+- Deterministic recipe logic for improved reliability
 
 ---
 
@@ -47,8 +52,10 @@ Users can ask in both English and Mandarin, for example:
 - `I want pumpkin pie for 6 people`
 - `Give me a brownie recipe for 12 servings`
 - `I want to make tiramisu for 8 people`
+- `Straberry cake for 3`
 - `我要做南瓜派5個人`
 - `我要做20人份的巧克力蛋糕`
+- `檸檬派15人`
 
 The system will:
 

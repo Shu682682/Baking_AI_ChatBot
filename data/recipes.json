@@ -1,0 +1,666 @@
+[
+  {
+    "recipe_id": "choco_cake_001",
+    "name": "Classic Chocolate Cake",
+    "servings": 8,
+    "ingredients": [
+      { "name": "all-purpose flour", "amount": 200, "unit": "g" },
+      { "name": "sugar", "amount": 180, "unit": "g" },
+      { "name": "cocoa powder", "amount": 50, "unit": "g" },
+      { "name": "eggs", "amount": 2, "unit": "pcs" },
+      { "name": "milk", "amount": 240, "unit": "ml" }
+    ],
+    "steps": [
+      "Preheat oven to 350F.",
+      "Mix dry ingredients.",
+      "Add wet ingredients.",
+      "Bake for 30 minutes."
+    ]
+  },
+  {
+    "recipe_id": "vanilla_cupcake_001",
+    "name": "Vanilla Cupcakes",
+    "servings": 12,
+    "ingredients": [
+      { "name": "all-purpose flour", "amount": 220, "unit": "g" },
+      { "name": "sugar", "amount": 180, "unit": "g" },
+      { "name": "butter", "amount": 120, "unit": "g" },
+      { "name": "eggs", "amount": 2, "unit": "pcs" },
+      { "name": "milk", "amount": 180, "unit": "ml" }
+    ],
+    "steps": [
+      "Preheat oven to 350F.",
+      "Cream butter and sugar.",
+      "Add eggs and milk.",
+      "Fold in flour.",
+      "Bake for 18 minutes."
+    ]
+  },
+  {
+    "recipe_id": "brownie_001",
+    "name": "Classic Brownies",
+    "servings": 9,
+    "ingredients": [
+      { "name": "butter", "amount": 115, "unit": "g" },
+      { "name": "sugar", "amount": 200, "unit": "g" },
+      { "name": "cocoa powder", "amount": 50, "unit": "g" },
+      { "name": "eggs", "amount": 2, "unit": "pcs" },
+      { "name": "all-purpose flour", "amount": 95, "unit": "g" }
+    ],
+    "steps": [
+      "Preheat oven to 350F.",
+      "Melt butter and mix with sugar and cocoa powder.",
+      "Add eggs and stir well.",
+      "Fold in flour.",
+      "Bake for 25 minutes."
+    ]
+  },
+  {
+    "recipe_id": "tiramisu_001",
+    "name": "Classic Tiramisu",
+    "servings": 8,
+    "ingredients": [
+      { "name": "ladyfingers", "amount": 24, "unit": "pcs" },
+      { "name": "mascarpone cheese", "amount": 450, "unit": "g" },
+      { "name": "heavy cream", "amount": 240, "unit": "ml" },
+      { "name": "sugar", "amount": 100, "unit": "g" },
+      { "name": "espresso", "amount": 240, "unit": "ml" }
+    ],
+    "steps": [
+      "Whip heavy cream with sugar until soft peaks form.",
+      "Fold mascarpone into the whipped cream.",
+      "Dip ladyfingers into espresso briefly.",
+      "Layer cream mixture and soaked ladyfingers.",
+      "Chill for at least 4 hours before serving."
+    ]
+  },
+  {
+    "recipe_id": "matcha_cake_001",
+    "name": "Matcha Cake",
+    "servings": 8,
+    "ingredients": [
+      { "name": "all-purpose flour", "amount": 180, "unit": "g" },
+      { "name": "sugar", "amount": 160, "unit": "g" },
+      { "name": "matcha powder", "amount": 15, "unit": "g" },
+      { "name": "eggs", "amount": 2, "unit": "pcs" },
+      { "name": "milk", "amount": 180, "unit": "ml" }
+    ],
+    "steps": [
+      "Preheat oven to 350F.",
+      "Whisk flour, sugar, and matcha powder together.",
+      "Add eggs and milk, then mix until smooth.",
+      "Pour batter into a cake pan.",
+      "Bake for 30 minutes."
+    ]
+  },
+  {
+    "recipe_id": "fruit_pie_001",
+    "name": "Mixed Fruit Pie",
+    "servings": 8,
+    "ingredients": [
+      { "name": "pie crust", "amount": 2, "unit": "pcs" },
+      { "name": "mixed berries", "amount": 500, "unit": "g" },
+      { "name": "sugar", "amount": 120, "unit": "g" },
+      { "name": "cornstarch", "amount": 30, "unit": "g" },
+      { "name": "lemon juice", "amount": 15, "unit": "ml" }
+    ],
+    "steps": [
+      "Preheat oven to 375F.",
+      "Mix fruit with sugar, cornstarch, and lemon juice.",
+      "Fill pie crust and cover with top crust.",
+      "Cut vents in the top crust.",
+      "Bake for 45 minutes."
+    ]
+  },
+  {
+    "recipe_id": "ny_cheesecake_001",
+    "name": "New York Cheesecake",
+    "servings": 10,
+    "ingredients": [
+      { "name": "cream cheese", "amount": 680, "unit": "g" },
+      { "name": "sugar", "amount": 200, "unit": "g" },
+      { "name": "eggs", "amount": 3, "unit": "pcs" },
+      { "name": "sour cream", "amount": 240, "unit": "ml" },
+      { "name": "graham cracker crumbs", "amount": 180, "unit": "g" }
+    ],
+    "steps": [
+      "Preheat oven to 325F.",
+      "Press graham cracker crumbs into the pan for crust.",
+      "Beat cream cheese and sugar until smooth.",
+      "Add eggs and sour cream.",
+      "Bake for 55 minutes and chill before serving."
+    ]
+  },
+  {
+    "recipe_id": "chocolate_tart_001",
+    "name": "Chocolate Tart",
+    "servings": 8,
+    "ingredients": [
+      { "name": "tart shell", "amount": 1, "unit": "pcs" },
+      { "name": "dark chocolate", "amount": 200, "unit": "g" },
+      { "name": "heavy cream", "amount": 240, "unit": "ml" },
+      { "name": "butter", "amount": 30, "unit": "g" },
+      { "name": "sugar", "amount": 30, "unit": "g" }
+    ],
+    "steps": [
+      "Warm cream and sugar until hot.",
+      "Pour over chopped chocolate and butter.",
+      "Stir until smooth ganache forms.",
+      "Pour into tart shell.",
+      "Chill until set."
+    ]
+  },
+  {
+    "recipe_id": "lemon_cake_001",
+    "name": "Classic Lemon Cake",
+    "servings": 8,
+    "ingredients": [
+      { "name": "all-purpose flour", "amount": 200, "unit": "g" },
+      { "name": "sugar", "amount": 180, "unit": "g" },
+      { "name": "butter", "amount": 115, "unit": "g" },
+      { "name": "eggs", "amount": 2, "unit": "pcs" },
+      { "name": "lemon juice", "amount": 60, "unit": "ml" }
+    ],
+    "steps": [
+      "Preheat oven to 350F.",
+      "Cream butter and sugar.",
+      "Add eggs, lemon juice, and flour.",
+      "Mix until smooth.",
+      "Bake for 30 minutes."
+    ]
+  },
+  {
+    "recipe_id": "banana_cream_pie_001",
+    "name": "Banana Cream Pie",
+    "servings": 8,
+    "ingredients": [
+      { "name": "pie crust", "amount": 1, "unit": "pcs" },
+      { "name": "bananas", "amount": 3, "unit": "pcs" },
+      { "name": "milk", "amount": 480, "unit": "ml" },
+      { "name": "sugar", "amount": 100, "unit": "g" },
+      { "name": "vanilla pudding mix", "amount": 100, "unit": "g" }
+    ],
+    "steps": [
+      "Bake or prepare the pie crust.",
+      "Cook pudding mix with milk and sugar.",
+      "Slice bananas into the crust.",
+      "Pour pudding over bananas.",
+      "Chill until set."
+    ]
+  },
+  {
+    "recipe_id": "oreo_choco_cake_001",
+    "name": "Oreo Chocolate Cake",
+    "servings": 10,
+    "ingredients": [
+      { "name": "all-purpose flour", "amount": 220, "unit": "g" },
+      { "name": "sugar", "amount": 200, "unit": "g" },
+      { "name": "cocoa powder", "amount": 60, "unit": "g" },
+      { "name": "eggs", "amount": 2, "unit": "pcs" },
+      { "name": "oreo cookies", "amount": 12, "unit": "pcs" }
+    ],
+    "steps": [
+      "Preheat oven to 350F.",
+      "Mix flour, sugar, and cocoa powder.",
+      "Add eggs and combine into batter.",
+      "Fold in crushed Oreo cookies.",
+      "Bake for 32 minutes."
+    ]
+  },
+  {
+    "recipe_id": "blueberry_muffin_001",
+    "name": "Blueberry Muffins",
+    "servings": 12,
+    "ingredients": [
+      { "name": "all-purpose flour", "amount": 250, "unit": "g" },
+      { "name": "sugar", "amount": 160, "unit": "g" },
+      { "name": "blueberries", "amount": 180, "unit": "g" },
+      { "name": "eggs", "amount": 2, "unit": "pcs" },
+      { "name": "milk", "amount": 180, "unit": "ml" }
+    ],
+    "steps": [
+      "Preheat oven to 375F.",
+      "Mix flour and sugar together.",
+      "Add eggs and milk.",
+      "Fold in blueberries gently.",
+      "Bake for 22 minutes."
+    ]
+  },
+  {
+    "recipe_id": "pumpkin_pie_001",
+    "name": "Pumpkin Pie",
+    "servings": 8,
+    "ingredients": [
+      { "name": "pie crust", "amount": 1, "unit": "pcs" },
+      { "name": "pumpkin puree", "amount": 425, "unit": "g" },
+      { "name": "evaporated milk", "amount": 350, "unit": "ml" },
+      { "name": "eggs", "amount": 2, "unit": "pcs" },
+      { "name": "sugar", "amount": 150, "unit": "g" }
+    ],
+    "steps": [
+      "Preheat oven to 425F.",
+      "Mix pumpkin puree, milk, eggs, and sugar.",
+      "Pour filling into pie crust.",
+      "Bake at 425F for 15 minutes, then reduce heat to 350F.",
+      "Continue baking for 35 minutes."
+    ]
+  },
+  {
+    "recipe_id": "apple_pie_001",
+    "name": "Apple Pie",
+    "servings": 8,
+    "ingredients": [
+      { "name": "pie crust", "amount": 2, "unit": "pcs" },
+      { "name": "apples", "amount": 6, "unit": "pcs" },
+      { "name": "sugar", "amount": 140, "unit": "g" },
+      { "name": "cinnamon", "amount": 5, "unit": "g" },
+      { "name": "butter", "amount": 30, "unit": "g" }
+    ],
+    "steps": [
+      "Preheat oven to 375F.",
+      "Slice apples and mix with sugar and cinnamon.",
+      "Fill crust with apple mixture and dot with butter.",
+      "Cover with top crust and seal edges.",
+      "Bake for 50 minutes."
+    ]
+  },
+  {
+    "recipe_id": "pecan_pie_001",
+    "name": "Pecan Pie",
+    "servings": 8,
+    "ingredients": [
+      { "name": "pie crust", "amount": 1, "unit": "pcs" },
+      { "name": "pecans", "amount": 200, "unit": "g" },
+      { "name": "corn syrup", "amount": 240, "unit": "ml" },
+      { "name": "sugar", "amount": 100, "unit": "g" },
+      { "name": "eggs", "amount": 3, "unit": "pcs" }
+    ],
+    "steps": [
+      "Preheat oven to 350F.",
+      "Whisk corn syrup, sugar, and eggs together.",
+      "Stir in pecans.",
+      "Pour into pie crust.",
+      "Bake for 50 minutes."
+    ]
+  },
+  {
+    "recipe_id": "red_velvet_cake_001",
+    "name": "Red Velvet Cake",
+    "servings": 10,
+    "ingredients": [
+      { "name": "all-purpose flour", "amount": 250, "unit": "g" },
+      { "name": "sugar", "amount": 220, "unit": "g" },
+      { "name": "cocoa powder", "amount": 15, "unit": "g" },
+      { "name": "eggs", "amount": 2, "unit": "pcs" },
+      { "name": "buttermilk", "amount": 240, "unit": "ml" }
+    ],
+    "steps": [
+      "Preheat oven to 350F.",
+      "Mix dry ingredients together.",
+      "Add eggs, buttermilk, and red coloring if desired.",
+      "Pour into cake pans.",
+      "Bake for 30 minutes."
+    ]
+  },
+  {
+    "recipe_id": "carrot_cake_001",
+    "name": "Carrot Cake",
+    "servings": 10,
+    "ingredients": [
+      { "name": "all-purpose flour", "amount": 240, "unit": "g" },
+      { "name": "sugar", "amount": 200, "unit": "g" },
+      { "name": "carrots", "amount": 250, "unit": "g" },
+      { "name": "eggs", "amount": 3, "unit": "pcs" },
+      { "name": "vegetable oil", "amount": 180, "unit": "ml" }
+    ],
+    "steps": [
+      "Preheat oven to 350F.",
+      "Mix flour and sugar together.",
+      "Add eggs and oil.",
+      "Fold in grated carrots.",
+      "Bake for 35 minutes."
+    ]
+  },
+  {
+    "recipe_id": "cheesecake_bars_001",
+    "name": "Cheesecake Bars",
+    "servings": 12,
+    "ingredients": [
+      { "name": "cream cheese", "amount": 450, "unit": "g" },
+      { "name": "sugar", "amount": 120, "unit": "g" },
+      { "name": "eggs", "amount": 2, "unit": "pcs" },
+      { "name": "graham cracker crumbs", "amount": 150, "unit": "g" },
+      { "name": "butter", "amount": 70, "unit": "g" }
+    ],
+    "steps": [
+      "Preheat oven to 325F.",
+      "Mix graham crumbs with melted butter and press into pan.",
+      "Beat cream cheese, sugar, and eggs until smooth.",
+      "Pour over crust.",
+      "Bake for 30 minutes and cool completely."
+    ]
+  },
+  {
+    "recipe_id": "choco_chip_cookie_001",
+    "name": "Chocolate Chip Cookies",
+    "servings": 24,
+    "ingredients": [
+      { "name": "all-purpose flour", "amount": 280, "unit": "g" },
+      { "name": "brown sugar", "amount": 150, "unit": "g" },
+      { "name": "butter", "amount": 170, "unit": "g" },
+      { "name": "eggs", "amount": 2, "unit": "pcs" },
+      { "name": "chocolate chips", "amount": 200, "unit": "g" }
+    ],
+    "steps": [
+      "Preheat oven to 350F.",
+      "Cream butter and sugar.",
+      "Add eggs, then flour.",
+      "Fold in chocolate chips.",
+      "Scoop and bake for 12 minutes."
+    ]
+  },
+  {
+    "recipe_id": "snickerdoodle_001",
+    "name": "Snickerdoodles",
+    "servings": 24,
+    "ingredients": [
+      { "name": "all-purpose flour", "amount": 250, "unit": "g" },
+      { "name": "sugar", "amount": 180, "unit": "g" },
+      { "name": "butter", "amount": 115, "unit": "g" },
+      { "name": "eggs", "amount": 2, "unit": "pcs" },
+      { "name": "cinnamon", "amount": 8, "unit": "g" }
+    ],
+    "steps": [
+      "Preheat oven to 350F.",
+      "Cream butter and sugar.",
+      "Add eggs and flour.",
+      "Roll dough in cinnamon sugar.",
+      "Bake for 10 minutes."
+    ]
+  },
+  {
+    "recipe_id": "sugar_cookie_001",
+    "name": "Sugar Cookies",
+    "servings": 24,
+    "ingredients": [
+      { "name": "all-purpose flour", "amount": 260, "unit": "g" },
+      { "name": "sugar", "amount": 160, "unit": "g" },
+      { "name": "butter", "amount": 170, "unit": "g" },
+      { "name": "eggs", "amount": 1, "unit": "pcs" },
+      { "name": "vanilla extract", "amount": 5, "unit": "ml" }
+    ],
+    "steps": [
+      "Preheat oven to 350F.",
+      "Cream butter and sugar.",
+      "Add egg and vanilla.",
+      "Mix in flour to form dough.",
+      "Cut shapes and bake for 10 minutes."
+    ]
+  },
+  {
+    "recipe_id": "banana_bread_001",
+    "name": "Banana Bread",
+    "servings": 10,
+    "ingredients": [
+      { "name": "ripe bananas", "amount": 3, "unit": "pcs" },
+      { "name": "all-purpose flour", "amount": 220, "unit": "g" },
+      { "name": "sugar", "amount": 150, "unit": "g" },
+      { "name": "eggs", "amount": 2, "unit": "pcs" },
+      { "name": "butter", "amount": 115, "unit": "g" }
+    ],
+    "steps": [
+      "Preheat oven to 350F.",
+      "Mash bananas in a bowl.",
+      "Mix in butter, sugar, eggs, and flour.",
+      "Pour into loaf pan.",
+      "Bake for 50 minutes."
+    ]
+  },
+  {
+    "recipe_id": "lemon_bar_001",
+    "name": "Lemon Bars",
+    "servings": 12,
+    "ingredients": [
+      { "name": "all-purpose flour", "amount": 200, "unit": "g" },
+      { "name": "butter", "amount": 115, "unit": "g" },
+      { "name": "sugar", "amount": 180, "unit": "g" },
+      { "name": "eggs", "amount": 3, "unit": "pcs" },
+      { "name": "lemon juice", "amount": 80, "unit": "ml" }
+    ],
+    "steps": [
+      "Preheat oven to 350F.",
+      "Make crust with flour and butter and bake briefly.",
+      "Whisk sugar, eggs, and lemon juice together.",
+      "Pour filling over crust.",
+      "Bake for 25 minutes."
+    ]
+  },
+  {
+    "recipe_id": "peach_cobbler_001",
+    "name": "Peach Cobbler",
+    "servings": 8,
+    "ingredients": [
+      { "name": "peaches", "amount": 500, "unit": "g" },
+      { "name": "all-purpose flour", "amount": 150, "unit": "g" },
+      { "name": "sugar", "amount": 140, "unit": "g" },
+      { "name": "butter", "amount": 100, "unit": "g" },
+      { "name": "milk", "amount": 180, "unit": "ml" }
+    ],
+    "steps": [
+      "Preheat oven to 350F.",
+      "Place peaches in a baking dish.",
+      "Mix flour, sugar, butter, and milk into batter.",
+      "Pour batter over peaches.",
+      "Bake for 40 minutes."
+    ]
+  },
+  {
+    "recipe_id": "strawberry_shortcake_001",
+    "name": "Strawberry Shortcake",
+    "servings": 8,
+    "ingredients": [
+      { "name": "shortcakes", "amount": 8, "unit": "pcs" },
+      { "name": "strawberries", "amount": 400, "unit": "g" },
+      { "name": "sugar", "amount": 60, "unit": "g" },
+      { "name": "heavy cream", "amount": 240, "unit": "ml" },
+      { "name": "vanilla extract", "amount": 5, "unit": "ml" }
+    ],
+    "steps": [
+      "Slice strawberries and toss with sugar.",
+      "Whip cream with vanilla extract.",
+      "Split shortcakes in half.",
+      "Layer strawberries and whipped cream inside.",
+      "Serve immediately."
+    ]
+  },
+  {
+    "recipe_id": "key_lime_pie_001",
+    "name": "Key Lime Pie",
+    "servings": 8,
+    "ingredients": [
+      { "name": "graham cracker crust", "amount": 1, "unit": "pcs" },
+      { "name": "sweetened condensed milk", "amount": 400, "unit": "g" },
+      { "name": "key lime juice", "amount": 120, "unit": "ml" },
+      { "name": "egg yolks", "amount": 4, "unit": "pcs" },
+      { "name": "lime zest", "amount": 10, "unit": "g" }
+    ],
+    "steps": [
+      "Preheat oven to 350F.",
+      "Whisk condensed milk, lime juice, yolks, and zest.",
+      "Pour into crust.",
+      "Bake for 15 minutes.",
+      "Cool and chill before serving."
+    ]
+  },
+  {
+    "recipe_id": "whoopie_pie_001",
+    "name": "Whoopie Pies",
+    "servings": 12,
+    "ingredients": [
+      { "name": "all-purpose flour", "amount": 240, "unit": "g" },
+      { "name": "cocoa powder", "amount": 50, "unit": "g" },
+      { "name": "sugar", "amount": 180, "unit": "g" },
+      { "name": "eggs", "amount": 1, "unit": "pcs" },
+      { "name": "milk", "amount": 180, "unit": "ml" }
+    ],
+    "steps": [
+      "Preheat oven to 350F.",
+      "Mix flour, cocoa, and sugar together.",
+      "Add egg and milk to form batter.",
+      "Spoon rounds onto baking sheet.",
+      "Bake for 10 minutes and sandwich with filling."
+    ]
+  },
+  {
+    "recipe_id": "boston_cream_pie_001",
+    "name": "Boston Cream Pie",
+    "servings": 10,
+    "ingredients": [
+      { "name": "cake flour", "amount": 220, "unit": "g" },
+      { "name": "sugar", "amount": 180, "unit": "g" },
+      { "name": "eggs", "amount": 3, "unit": "pcs" },
+      { "name": "milk", "amount": 240, "unit": "ml" },
+      { "name": "dark chocolate", "amount": 150, "unit": "g" }
+    ],
+    "steps": [
+      "Preheat oven to 350F.",
+      "Bake a simple sponge cake.",
+      "Prepare pastry cream with milk and eggs.",
+      "Split cake and fill with cream.",
+      "Top with melted chocolate glaze."
+    ]
+  },
+  {
+    "recipe_id": "coffee_cake_001",
+    "name": "Coffee Cake",
+    "servings": 9,
+    "ingredients": [
+      { "name": "all-purpose flour", "amount": 220, "unit": "g" },
+      { "name": "sugar", "amount": 170, "unit": "g" },
+      { "name": "butter", "amount": 115, "unit": "g" },
+      { "name": "eggs", "amount": 2, "unit": "pcs" },
+      { "name": "sour cream", "amount": 180, "unit": "ml" }
+    ],
+    "steps": [
+      "Preheat oven to 350F.",
+      "Cream butter and sugar.",
+      "Add eggs and sour cream.",
+      "Fold in flour and spread into pan.",
+      "Bake for 30 minutes."
+    ]
+  },
+  {
+    "recipe_id": "pound_cake_001",
+    "name": "Pound Cake",
+    "servings": 10,
+    "ingredients": [
+      { "name": "all-purpose flour", "amount": 240, "unit": "g" },
+      { "name": "sugar", "amount": 220, "unit": "g" },
+      { "name": "butter", "amount": 225, "unit": "g" },
+      { "name": "eggs", "amount": 4, "unit": "pcs" },
+      { "name": "milk", "amount": 120, "unit": "ml" }
+    ],
+    "steps": [
+      "Preheat oven to 325F.",
+      "Cream butter and sugar until fluffy.",
+      "Add eggs one at a time.",
+      "Mix in flour and milk.",
+      "Bake for 60 minutes."
+    ]
+  },
+  {
+    "recipe_id": "cinnamon_roll_001",
+    "name": "Cinnamon Rolls",
+    "servings": 12,
+    "ingredients": [
+      { "name": "all-purpose flour", "amount": 500, "unit": "g" },
+      { "name": "milk", "amount": 240, "unit": "ml" },
+      { "name": "butter", "amount": 80, "unit": "g" },
+      { "name": "brown sugar", "amount": 120, "unit": "g" },
+      { "name": "cinnamon", "amount": 10, "unit": "g" }
+    ],
+    "steps": [
+      "Prepare and knead the dough.",
+      "Roll dough into a rectangle.",
+      "Spread butter and sprinkle brown sugar with cinnamon.",
+      "Roll up, slice, and place in pan.",
+      "Bake at 350F for 25 minutes."
+    ]
+  },
+  {
+    "recipe_id": "donut_001",
+    "name": "Glazed Donuts",
+    "servings": 12,
+    "ingredients": [
+      { "name": "all-purpose flour", "amount": 350, "unit": "g" },
+      { "name": "milk", "amount": 180, "unit": "ml" },
+      { "name": "sugar", "amount": 80, "unit": "g" },
+      { "name": "eggs", "amount": 1, "unit": "pcs" },
+      { "name": "butter", "amount": 60, "unit": "g" }
+    ],
+    "steps": [
+      "Prepare yeast dough and let it rise.",
+      "Roll and cut into donut shapes.",
+      "Let donuts rise again briefly.",
+      "Fry until golden brown.",
+      "Dip in glaze while warm."
+    ]
+  },
+  {
+    "recipe_id": "cupcake_red_velvet_001",
+    "name": "Red Velvet Cupcakes",
+    "servings": 12,
+    "ingredients": [
+      { "name": "all-purpose flour", "amount": 220, "unit": "g" },
+      { "name": "sugar", "amount": 180, "unit": "g" },
+      { "name": "cocoa powder", "amount": 15, "unit": "g" },
+      { "name": "eggs", "amount": 2, "unit": "pcs" },
+      { "name": "buttermilk", "amount": 180, "unit": "ml" }
+    ],
+    "steps": [
+      "Preheat oven to 350F.",
+      "Mix flour, sugar, and cocoa powder.",
+      "Add eggs and buttermilk.",
+      "Fill cupcake liners.",
+      "Bake for 18 minutes."
+    ]
+  },
+  {
+    "recipe_id": "molten_lava_cake_001",
+    "name": "Molten Lava Cake",
+    "servings": 4,
+    "ingredients": [
+      { "name": "dark chocolate", "amount": 120, "unit": "g" },
+      { "name": "butter", "amount": 115, "unit": "g" },
+      { "name": "sugar", "amount": 80, "unit": "g" },
+      { "name": "eggs", "amount": 2, "unit": "pcs" },
+      { "name": "all-purpose flour", "amount": 40, "unit": "g" }
+    ],
+    "steps": [
+      "Preheat oven to 425F.",
+      "Melt chocolate and butter together.",
+      "Whisk in sugar, eggs, and flour.",
+      "Pour into ramekins.",
+      "Bake for 12 minutes."
+    ]
+  },
+  {
+    "recipe_id": "peanut_butter_cookie_001",
+    "name": "Peanut Butter Cookies",
+    "servings": 24,
+    "ingredients": [
+      { "name": "peanut butter", "amount": 250, "unit": "g" },
+      { "name": "sugar", "amount": 180, "unit": "g" },
+      { "name": "brown sugar", "amount": 100, "unit": "g" },
+      { "name": "eggs", "amount": 1, "unit": "pcs" },
+      { "name": "all-purpose flour", "amount": 160, "unit": "g" }
+    ],
+    "steps": [
+      "Preheat oven to 350F.",
+      "Mix peanut butter, sugars, and egg together.",
+      "Add flour and combine.",
+      "Shape dough into balls and press with fork.",
+      "Bake for 10 minutes."
+    ]
+  }
+]

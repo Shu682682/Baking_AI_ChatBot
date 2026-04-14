@@ -95,6 +95,25 @@ The system follows a hybrid architecture:
 
 ---
 
+How to Setup
+1. Clone the repository
+git clone <https://github.com/Shu682682/Baking_AI_ChatBot.git>
+cd Baking-AI-ChatBot
+2. Create and activate a virtual environment
+python3 -m venv .venv
+source .venv/bin/activate
+3. Install dependencies
+pip install -r requirements.txt
+4. Install and run Ollama
+
+Make sure Ollama is installed and running locally.
+
+Example:
+
+ollama pull gemma3
+ollama pull embeddinggemma
+
+---
 How to Run
 1. Build the Chroma collection
 python -m app.chroma_setup

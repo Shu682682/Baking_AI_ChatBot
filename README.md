@@ -47,7 +47,7 @@ Users can ask in both English and Mandarin, for example:
 - `I want pumpkin pie for 6 people`
 - `Give me a brownie recipe for 12 servings`
 - `I want to make tiramisu for 8 people`
-- `我要做南瓜派5個人`(Madarin is okay too)
+- `我要做南瓜派5個人`
 - `我要做20人份的巧克力蛋糕`
 
 The system will:

@@ -1,6 +1,13 @@
 # Baking AI Chatbot
+![Demo Screenshot](assets/demopic.png)
 
 Baking AI Chatbot is an AI-powered dessert recipe assistant designed to help users search for recipes, adjust ingredients for different serving sizes, and receive clear baking instructions.
+## Demo Video
+### Demo 1
+[![Watch Demo 1](assets/demo1.gif)](./assets/demo1.mp4)
+
+### Demo 2
+[![Watch Demo 2](assets/demo2.gif)](./assets/demo2.mp4)
 
 Many recipe chatbots rely too heavily on LLM generation, which can lead to incorrect ingredient amounts or invented steps.
 This project improves reliability by:
@@ -147,3 +154,5 @@ uvicorn app.main:app --reload --reload-dir app --reload-dir data
 ```bash
 streamlit run ui/streamlit_app.py
 ```
+
+![Demo Screenshot](assets/demopic1.png)

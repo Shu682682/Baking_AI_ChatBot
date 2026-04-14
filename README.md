@@ -2,6 +2,16 @@
 
 Baking AI Chatbot is an AI-powered dessert recipe assistant designed to help users search for recipes, adjust ingredients for different serving sizes, and receive clear baking instructions.
 
+Many recipe chatbots rely too heavily on LLM generation, which can lead to incorrect ingredient amounts or invented steps.
+This project improves reliability by:
+
+- **keeping recipes in structured data**
+- **performing ingredient scaling with deterministic code**
+- **using retrieval before generation**
+- **using the LLM only for explanation and natural language presentation**
+
+This makes the system more practical for real cooking and baking scenarios.
+
 This project uses a hybrid architecture that combines:
 
 - **structured recipe data** as the source of truth
@@ -97,27 +107,35 @@ The system follows a hybrid architecture:
 
 How to Setup
 1. Clone the repository
+```bash
 git clone <https://github.com/Shu682682/Baking_AI_ChatBot.git>
 cd Baking-AI-ChatBot
+
 2. Create and activate a virtual environment
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
+
 3. Install dependencies
+```bash
 pip install -r requirements.txt
+
 4. Install and run Ollama
-
 Make sure Ollama is installed and running locally.
-
-Example:
-
+```bash
 ollama pull gemma3
 ollama pull embeddinggemma
 
 ---
 How to Run
 1. Build the Chroma collection
+```bash
 python -m app.chroma_setup
+
 2. Start the FastAPI backend
+```bash
 uvicorn app.main:app --reload --reload-dir app --reload-dir data
+
 3. Start the Streamlit frontend
+```bash
 streamlit run ui/streamlit_app.py

@@ -150,4 +150,4 @@ uvicorn app.main:app --reload --reload-dir app --reload-dir data
 streamlit run ui/streamlit_app.py
 ```
 
-![Demo Screenshot](assets/demopic1.png)
+![Demo Screenshot](assets/demopic2.png)

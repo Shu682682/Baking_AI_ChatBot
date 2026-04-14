@@ -1,20 +1,8 @@
 # Baking AI Chatbot
-![Demo Screenshot](assets/demopic.png)
+
+[![Watch Demo 1](assets/demo3.gif)](./assets/demo3.gif)
 
 Baking AI Chatbot is an AI-powered dessert recipe assistant designed to help users search for recipes, adjust ingredients for different serving sizes, and receive clear baking instructions.
-## Demo Video
-
-<p align="center">
-  <a href="./assets/demo1.mp4">
-    <img src="assets/demo1.gif" alt="Watch Demo 1" width="650"/>
-  </a>
-</p>
-
-<p align="center">
-  <a href="./assets/demo2.mp4">
-    <img src="assets/demo2.gif" alt="Watch Demo 2" width="650"/>
-  </a>
-</p>
 Many recipe chatbots rely too heavily on LLM generation, which can lead to incorrect ingredient amounts or invented steps.
 This project improves reliability by:
 
@@ -25,8 +13,9 @@ This project improves reliability by:
 
 This makes the system more practical for real cooking and baking scenarios.
 
-This project uses a hybrid architecture that combines:
+---
 
+This project uses a hybrid architecture that combines:
 - **structured recipe data** as the source of truth
 - **deterministic Python logic** for ingredient scaling
 - **keyword matching + Chroma vector retrieval** for recipe search
@@ -53,7 +42,7 @@ This design improves reliability by separating calculation logic from language g
 
 ## Example Use Cases
 
-Users can ask questions such as:
+Users can ask in both English and Mandarin, for example:
 
 - `I want pumpkin pie for 6 people`
 - `Give me a brownie recipe for 12 servings`
